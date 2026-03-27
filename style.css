@@ -23,14 +23,14 @@ body{
 
 .header__title{
     font-size: 120%;
-    font-weight: 300;
+    font-weight: 270;
 
 }
 
 .header__title span{
     background: linear-gradient(135deg, #6100ED, #2563EB);
     -webkit-background-clip: text;
-       font-weight: 300;
+       font-weight: 270;
     -webkit-text-fill-color: transparent;;
 }
 
@@ -110,7 +110,7 @@ body{
 
 .hero__top-info{
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     flex-direction: column;
 }
 
@@ -128,16 +128,11 @@ body{
     -webkit-text-fill-color: transparent;
 }
 
-.hero__container{
-    display: flex;
-    flex-direction: row;
-}
-
 .hero__nav{
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap: 10%;
+    gap: 2%;
     margin-top: 6%;
 }
 
@@ -263,6 +258,7 @@ body{
 .about-me__title{
     margin-bottom: 4%;
     font-size: 40%;
+    font-weight: 300;
     background: linear-gradient(135deg, #6100ED, #2563EB);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;   
@@ -271,7 +267,6 @@ body{
 
 .about-me__block-text p{
     font-size: 116%;
-
 }
 
 .stacks{
@@ -326,3 +321,189 @@ body{
 .stacks__stack-box img{
     height: 8vh;
 }
+
+.project{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 12% 8%;
+    align-items: center;
+}
+
+.project__title{
+    font-size: 220%;
+    font-weight: 270;
+}
+
+.project--align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 8%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.project__card{
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: #303030; */
+    border: 0 0 0 1px solid rgb(126, 126, 126);
+    width: 28%;
+    border-radius: 6px;
+    height: 58vh;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.project__card:hover{
+    /* background-color: #303030; */
+     transform: scale(1.1);
+    filter: brightness(1.1);
+    
+}
+
+.project__img{
+    margin-top: 6%;
+    border-radius: 6px;
+    height: 25vh;
+    width: 100%;
+}
+
+.project__name{
+    font-size: 140%;
+    margin-top: 3%;
+}
+
+.project__description--align{
+    width: 98%;
+    margin-top: 2%;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 46vh;
+    background: linear-gradient(135deg, #6100ED, #2563EB);
+}
+
+.contact__title{
+    margin-top: 2%;
+    font-size: 200%;
+}
+
+.contact__social-media--align{
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact__box-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    background-color: #303030;
+    width: 6%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact__box-social:hover{
+    transform: scale(1.2);
+}
+
+.contact__email{
+    font-size: 130%;
+    color: white;
+}
+
+@media (max-width: 450px){
+
+    .header{
+        margin: 0 4%;
+        height: 10vh;
+        /* background-color: cadetblue; */
+    }
+
+    .header__nav-list{
+        display: none;
+    }
+
+    .header__contact--button{
+        display: none;
+    }
+
+    .hero{
+        margin: 8% 5%;
+        /* margin-top: 15%; */
+        flex-direction: column;
+    }
+
+    .hero__title{
+        font-size: 280%;
+        text-align: center;
+    }
+
+    .hero__box-info{
+        width: 100%;
+    }
+
+    .hero__top-info{
+        display: flex;
+        gap: 1.5rem;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+}
+
+    .hero__description{ 
+        text-align: center;
+    }
+
+    .about-me{
+        justify-content: center;
+        margin: 0% 5%;
+    }
+
+    .hero__main-links{
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero__link--download-cv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        height: 40px;
+        margin-bottom: 15%;
+    }
+
+    .hero__code-container{
+        margin: 0;
+    }
+
+    .hero__code-card{
+        height: auto;
+        padding-bottom: 5%;
+        width: 100%;
+    }
+
+    .about-me__title{
+        text-align: center;
+    }
+}
+
+
+
