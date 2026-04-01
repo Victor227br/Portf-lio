@@ -18,9 +18,9 @@
     </div>
 
     <ul class="header__nav-list">
-        <li>Projetos</li>
-        <li>Sobre mim</li>
-        <li>Social</li>
+        <li ><a href="#about-me">Sobre mim</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#social">social</a></li>
         <button class="header__contact--button">Contate-me</button>
     </ul>
 
@@ -70,40 +70,41 @@
 
 </section>
 
-<section class="about-me">
+<section id="about-me" class="about-me">
     <div class="about-me__block-text">
         <h2 class="about-me__title">Sobre Mim </h2>
         <p>Sou estudante de Desenvolvimento de Software desde 2024, com mentoria focada na prática e evolução contínua, tenho me dedicado ao desenvolvimento front-end utilizando HTML, CSS, JavaScript e React, além de possuir conhecimentos em Java e Node.js.</p>
             <br><p>Em 2026, iniciei minha graduação na área de tecnologia com o objetivo de aprofundar meus conhecimentos e fortalecer minha base teórica e prática, tenho familiaridade com metodologias ágeis, especialmente Kanban, organizando tarefas de forma eficiente, priorizando entregas.</p>
             <br><p>Atualmente, estou em busca da minha primeira oportunidade de estágio, onde eu possa aplicar meus conhecimentos, evoluir como desenvolvedor e contribuir com projetos reais no mercado de tecnologia.</p></p>
         </div>
-</section>
 
-<section class="stacks">
-    <div class="stacks--align">     
-        <div class="stacks__stack-box">
-            <img class="stacks__stack-img" src="logos-imgs/css-logo-white.png" alt="">
+<div class=" about-me__stacks">
+    <div class="about-me__stacks--align">     
+        <div class="about-me__stack-box">
+            <img class="about-me__stack-img" src="logos-imgs/css-logo-white.png" alt="">
         </div>
-        <div class="stacks__stack-box">
-            <img class="stacks__stack-img" src="logos-imgs/git-logo-white.png" alt="">
+        <div class="about-me__stack-box">
+            <img class="about-me__stack-img" src="logos-imgs/git-logo-white.png" alt="">
         </div>
-        <div class="stacks__stack-box">
-            <img class="stacks__stack-img" src="logos-imgs/javascript-logo-white.png" alt="">
+        <div class="about-me__stack-box">
+            <img class="about-me__stack-img" src="logos-imgs/javascript-logo-white.png" alt="">
         </div>
-        <div class="stacks__stack-box">
-            <img class="stacks__stack-img" src="logos-imgs/react-logo-white.png" alt="">
+        <div class="about-me__stack-box">
+            <img class="about-me__stack-img" src="logos-imgs/react-logo-white.png" alt="">
         </div>
-        <div class="stacks__stack-box">
-            <img class="stacks__stack-img" src="logos-imgs/nodejs-logo-white.png" alt="">
+        <div class="about-me__stack-box">
+            <img class="about-me__stack-img" src="logos-imgs/nodejs-logo-white.png" alt="">
         </div>
-        <div class="stacks__stack-box">
-            <img class="stacks__stack-img" src="logos-imgs/java-logo-white.png" alt="">
+        <div class="about-me__stack-box">
+            <img class="about-me__stack-img" src="logos-imgs/java-logo-white.png" alt="">
         </div>
-        
     </div>
+</div>
+
 </section>
 
-<section class="project">
+
+<section id="projects" class="project">
     <h2 class="project__title">Projetos Principais</h2>
     <div class="project--align">
         <div class="project__card">
@@ -112,30 +113,45 @@
             <div class="project__description--align">
                 <p class="project__description">O projeto movexa é um Crud de javascript puro que simula um sistema de cadastro de clientes</p>
             </div>
+            <div class="project__buttons--align">
+                <button class="project__code--button"> <img class="project__img-button" src="logos-imgs/github-logo-white.png" alt="">Ver código</button>
+                <button class="project__link--button">Ver projeto</button>
+            </div>
         </div>
 
-         <div class="project__card">
+        <div class="project__card">
                 <img class="project__img" src="projects-imgs/project__movexa-img.png" alt="">
             <h3 class="project__name">Movexa</h3>
             <div class="project__description--align">
                 <p class="project__description">O projeto movexa é um Crud de javascript puro que simula um sistema de cadastro de clientes</p>
             </div>
+            <div class="project__buttons--align">
+                <button class="project__code--button"> <img class="project__img-button" src="logos-imgs/github-logo-white.png" alt="">Ver código</button>
+                <button class="project__link--button">Ver projeto</button>
+            </div>
         </div>
 
-         <div class="project__card">
+        <div class="project__card">
                 <img class="project__img" src="projects-imgs/project__movexa-img.png" alt="">
             <h3 class="project__name">Movexa</h3>
             <div class="project__description--align">
-                <p class="project__description">Aplicação web desenvolvida em JavaScript para gerenciamento de clientes.</p>
+                <p class="project__description">O projeto movexa é um Crud de javascript puro que simula um sistema de cadastro de clientes</p>
+            </div>
+            <div class="project__buttons--align">
+                <button class="project__code--button"> <img class="project__img-button" src="logos-imgs/github-logo-white.png" alt="">Ver código</button>
+                <button class="project__link--button">Ver projeto</button>
             </div>
         </div>
-    </div>
 </section>
 
-<footer class="contact">
-    <h2 class="contact__title">Informações de Contato</h2>
+<footer id="social" class="contact">
+    <h2 class="contact__title">Contato</h2>
     <div class="contact__social-media--align">
-          
+
+        <div class="contact__box-social">
+            <img src="logos-imgs/gmail-logo-white.png" alt="">
+        </div>
+
         <div class="contact__box-social">
             <img src="logos-imgs/linkedin-logo-white.png" alt="">
         </div>
@@ -147,7 +163,6 @@
             <img src="logos-imgs/github-logo-white.png" alt="">
         </div>
     </div>
-        <p class="contact__email">victorsouzavieira.22@gmail.com</p>
 </footer>
 
 
@@ -159,8 +174,8 @@
 $(document).ready(function () {
   function initMobileSlick() {
     if ($(window).width() <= 600) {
-      if (!$('.stacks--align').hasClass('slick-initialized')) {
-        $('.stacks--align').slick({
+      if (!$('.about-me__stacks--align').hasClass('slick-initialized')) {
+        $('.about-me__stacks--align').slick({
           slidesToShow: 3,
           slidesToScroll: 3,
           arrows: false,
@@ -172,8 +187,8 @@ $(document).ready(function () {
         });
       }
     } else {
-      if ($('.stacks--align').hasClass('slick-initialized')) {
-        $('.stacks--align').slick('unslick');
+      if ($('.about-me__stacks--align').hasClass('slick-initialized')) {
+        $('.about-me__stacks--align').slick('unslick');
       }
     }
   }
