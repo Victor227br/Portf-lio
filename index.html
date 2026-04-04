@@ -14,22 +14,33 @@
 
 <header class="header">
     <div class="header__title">
-        <h3 class="header__title">Victor <span>Souza</span></h3>
+        <h3>Victor <span>Souza</span></h3>
     </div>
-
     <ul class="header__nav-list">
-        <li ><a href="#about-me">Sobre mim</a></li>
-        <li><a href="#projects">Projetos</a></li>
-        <li><a href="#social">social</a></li>
-        <button class="header__contact--button">Contate-me</button>
+        <li class="header__nav-item"><a href="#about-me">Sobre mim</a></li>
+        <li class="header__nav-item"><a href="#projects">Projetos</a></li>
+        <li class="header__nav-item"><a href="#social">Social</a></li>            
+         <button class="header__contact--button"> <a href="">Contate-me</a></button>
+
     </ul>
 
-     <div class="header__mobile-menu">
-        <div class="header__line"></div>
-        <div class="header__line"></div>
-        <div class="header__line"></div>
+    <div id="menuBtn" class="header__menu-toggle">
+        <span class="header__menu-line"></span>
+        <span class="header__menu-line"></span>
+        <span class="header__menu-line"></span>
     </div>
 </header>
+
+<nav id="mobileMenu" class="header__mobile">
+    <button class="header__close-btn" id="closeMenu">✕</button>
+    <ul class="header__mobile-list">
+        <li class="header__mobile-item"><a href="#about-me">Sobre mim</a></li>
+        <li class="header__mobile-item"><a href="#projects">Projetos</a></li>
+        <li class="header__mobile-item"><a href="#social">Social</a></li>
+    </ul>
+            <button class="header__contact-mobiel--button">Contate-me</button>
+
+</nav>
 
 <section class="hero">
     <div class="hero__box-info">
@@ -114,32 +125,39 @@
                 <p class="project__description">O projeto movexa é um Crud de javascript puro que simula um sistema de cadastro de clientes</p>
             </div>
             <div class="project__buttons--align">
-                <button class="project__code--button"> <img class="project__img-button" src="logos-imgs/github-logo-white.png" alt="">Ver código</button>
-                <button class="project__link--button">Ver projeto</button>
+                <a target="_blank" href="https://github.com/Victor227br/CRUD-Javascript" class="project__code--button"> 
+                    <img class="project__img-button" src="logos-imgs/github-logo-white.png" alt="">Ver código
+                </a>                
+                <a target="_blank" href="https://movexa.netlify.app/" class="project__link--button">Ver projeto</a>
             </div>
         </div>
 
         <div class="project__card">
-                <img class="project__img" src="projects-imgs/project__movexa-img.png" alt="">
-            <h3 class="project__name">Movexa</h3>
+                <img class="project__img" src="projects-imgs/TravelHero-img-project.png" alt="">
+            <h3 class="project__name">Travel</h3>
             <div class="project__description--align">
-                <p class="project__description">O projeto movexa é um Crud de javascript puro que simula um sistema de cadastro de clientes</p>
+                <p class="project__description">Plataforma de viagens com design autoral, focada em UI/UX, responsividade e experiência do usuário</p>
             </div>
             <div class="project__buttons--align">
-                <button class="project__code--button"> <img class="project__img-button" src="logos-imgs/github-logo-white.png" alt="">Ver código</button>
-                <button class="project__link--button">Ver projeto</button>
+                <a target="_blank" href="https://github.com/Victor227br/TravelHeroCss" class="project__code--button"> 
+                    <img class="project__img-button" src="logos-imgs/github-logo-white.png" alt="">Ver código
+                </a>
+                <a target="_blank" href="https://travelheroes.netlify.app/" class="project__link--button">Ver projeto</a>
             </div>
+            
         </div>
 
         <div class="project__card">
                 <img class="project__img" src="projects-imgs/project__movexa-img.png" alt="">
-            <h3 class="project__name">Movexa</h3>
+            <h3 class="project__name">Steam</h3>
             <div class="project__description--align">
-                <p class="project__description">O projeto movexa é um Crud de javascript puro que simula um sistema de cadastro de clientes</p>
+                <p class="project__description">Adaptação da plataforma Steam, com foco em UI/UX,recriando a interface com uma experiência moderna e intuitiva.</p>
             </div>
             <div class="project__buttons--align">
-                <button class="project__code--button"> <img class="project__img-button" src="logos-imgs/github-logo-white.png" alt="">Ver código</button>
-                <button class="project__link--button">Ver projeto</button>
+                <a class="project__code--button" target="_blank" href="https://github.com/Victor227br/Steam">
+                  <img class="project__img-button" src="logos-imgs/github-logo-white.png" alt="">Ver código
+                </a>
+                <a href="" class="project__link--button">Ver projeto</a>
             </div>
         </div>
 </section>
@@ -173,7 +191,7 @@
 <script>
 $(document).ready(function () {
   function initMobileSlick() {
-    if ($(window).width() <= 600) {
+    if ($(window).width() <= 1024) {
       if (!$('.about-me__stacks--align').hasClass('slick-initialized')) {
         $('.about-me__stacks--align').slick({
           slidesToShow: 3,
@@ -234,5 +252,20 @@ $(document).ready(function () {
 });
 </script>
 
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("header__mobile--active");
+});
+
+const menuLinks = mobileMenu.querySelectorAll("a, button");
+menuLinks.forEach((item) => {
+    item.addEventListener("click", () => {
+        mobileMenu.classList.remove("header__mobile--active");
+    });
+});
+</script>
 </body>
 </html>
