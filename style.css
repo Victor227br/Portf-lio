@@ -213,11 +213,6 @@ a{
   margin-top: 5%;
 }
 
-.code{
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .hero__dot {
     width: 10px;
     height: 10px;
@@ -604,7 +599,7 @@ overflow-x: auto;
     cursor: pointer;
 }
 
-.header__contact-mobiel--button{
+.header__contact-mobile--button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -614,13 +609,13 @@ overflow-x: auto;
     border: none;
     font-size: 1.4rem;
     width: 80%;
-    height: 5.5vh;
+    height: 8vh;
     border-radius: 999px; 
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.header__contact-mobiel--button:active{
+.header__contact-mobile--button:active{
     transform: scale(1.1);
     filter: brightness(1.1);
     
@@ -645,7 +640,7 @@ overflow-x: auto;
     border-top: 1px solid white;
 }
 
-.header__mobile a{
+.header__mobile-item a{
     color: white;
     font-size: 1.5rem;
     background: none;
@@ -850,12 +845,21 @@ overflow-x: auto;
 
 .project__buttons--align{
     padding-bottom: 20px;
-    margin: 4%;
+    gap: 20px;
+    margin: 5%;
 }
 
 .project__buttons--align a{
     width: 100%;
     display: flex;
+}
+
+.project__code--button{
+    width: 40%;
+}
+
+.project__link--button{
+    width: 40%;
 }
 
 .contact{
@@ -944,7 +948,7 @@ overflow-x: auto;
     cursor: pointer;
 }
 
-.header__contact-mobiel--button{
+.header__contact-mobile--button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -960,10 +964,9 @@ overflow-x: auto;
     transition: all 0.3s ease;
 }
 
-.header__contact-mobiel--button:active{
+.header__contact-mobile--button:active{
     transform: scale(1.1);
-    filter: brightness(1.1);
-    
+    filter: brightness(1.1);   
 }
 
 .header__mobile--active {
@@ -985,7 +988,7 @@ overflow-x: auto;
     border-top: 2px solid white;
 }
 
-.header__mobile a{
+.header__mobile-item a{
     color: white;
     font-size: 1.5rem;
     background: none;
